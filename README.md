@@ -4,8 +4,7 @@ Bugsnag provider for AdonisJS
 
 [![npm version](https://badge.fury.io/js/adonis-bugsnag.svg)](https://badge.fury.io/js/adonis-bugsnag)
 [![Build status](https://ci.appveyor.com/api/projects/status/476ln8n8vb0vulgg/branch/master?svg=true)](https://ci.appveyor.com/project/Perafan18/adonis-bugsnag/branch/master)
-[![GitHub license](https://img.shields.io/github/license/Perafan18/adonis-bugsnag.svg)](https://github.com/Perafan18/adonis-bugsnag/blob/master/LICENSE)
-
+[![GitHub license](https://img.shields.io/github/license/Perafan18/adonis-bugsnag.svg)](https://github.com/thiagovinhote/adonis-bugsnag/blob/master/LICENSE)
 
 ## Install
 
@@ -16,10 +15,7 @@ adonis install adonis-bugsnag
 You need to add the provider to AdonisJS at `start/app.js`:
 
 ```javascript
-const providers = [
-   ...
-   'adonis-bugsnag/providers/Bugsnag',
-];
+const providers = [..."adonis-bugsnag/providers/BugsnagProvider"];
 ```
 
 and in your `.env` file
@@ -31,7 +27,7 @@ BUGSNAG_API_KEY=
 then you can use it as
 
 ```javascript
-const bugsnag = use('Bugsnag')
+const bugsnag = use("Bugsnag");
 ```
 
 if you want to catch all the exceptions of your adonis project you must create an exception handler
@@ -60,7 +56,6 @@ class ExceptionHandler {
 }
 
 module.exports = ExceptionHandler
-
 ```
 
 ## Official documentation for Node.js apps
@@ -77,12 +72,5 @@ It is always helpful if we try to follow certain practices when creating issues 
 4. When creating a PR for a feature, make sure to create a parallel PR for docs too.
 
 ## License
+
 Adonis Bugsnag is open-sourced software licensed under the MIT license.
-
-
-
-
-
-
-
-
